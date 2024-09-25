@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <img src="/img/bs.png" alt="bs" style="width: 1000px;">
+    <img src="/img/sun.png" alt="sun">
+    <svg width="241" height="170" viewBox="0 0 241 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M238.409 37.0005C238.409 37.0005 236.065 20.4536 228.847 13.188C219.706 3.62545 209.487 3.57857 204.8 3.01607C171.237 0.578574 120.847 0.578575 120.847 0.578575H120.753C120.753 0.578575 70.3623 0.578574 36.7998 3.01607C32.1123 3.57857 21.8936 3.62545 12.7529 13.188C5.53418 20.4536 3.2373 37.0005 3.2373 37.0005C3.2373 37.0005 0.799805 56.4536 0.799805 75.8598V94.0473C0.799805 113.454 3.19043 132.907 3.19043 132.907C3.19043 132.907 5.53418 149.454 12.7061 156.719C21.8467 166.282 33.8467 165.954 39.1904 166.985C58.4092 168.813 120.8 169.375 120.8 169.375C120.8 169.375 171.237 169.282 204.8 166.891C209.487 166.329 219.706 166.282 228.847 156.719C236.065 149.454 238.409 132.907 238.409 132.907C238.409 132.907 240.8 113.5 240.8 94.0473V75.8598C240.8 56.4536 238.409 37.0005 238.409 37.0005ZM96.0029 116.125V48.6723L160.831 82.5161L96.0029 116.125Z" fill="#32E089"/>
+    </svg>
+
+    <img id="train" src="https://js.cx/clipart/train.gif" style="position:relative; left:0px;">
+
+<script>
+  document.getElementById('train').onclick = function() {
+    let start = Date.now();
+
+    let timer = setInterval(function() {
+      let timePassed = Date.now() - start;
+
+     
+      document.getElementById('train').style.left = timePassed / 5 + 'px';
+
+     
+      if (timePassed > 2000) clearInterval(timer);
+
+    }, 20);
+  }
+</script>
+
+
+</body>
+</html>
