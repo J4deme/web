@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'sinera';
+    src: url(fonts/Sinera.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+#sinera{
+    font-family: 'sinera' ;
+    src:url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap')
+}
+
+#google{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#colored-text{
+    color: aqua;
+    background: gray;
+}
+div{
+    background-color: antiquewhite;
+    width: 1000px;
+    border-radius: 8px;
+}
